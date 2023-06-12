@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(cors());
 
 const emailUser = process.env.EMAIL;
-const emailPass = process.env.PASS
+const emailPass = process.env.PASS;
 
 app.post('/contact-form', (req, res) => {
   const { name, email, phone, message } = req.body;
